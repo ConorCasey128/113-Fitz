@@ -29,8 +29,9 @@ The goal is to make a fully playable, single-player game with a clean UI, proper
 
 ## Tech Stack
 
-| Area | Tools |
-| Language | JavaScript |
-| Markup | HTML |
-| Styling | CSS |
-| Hosting | GitHub Pages |
+| Area     | Tools        |
+| -------- | ------------ |
+| Language | JavaScript   |
+| Markup   | HTML         |
+| Styling  | CSS          |
+| Hosting  | GitHub Pages |
