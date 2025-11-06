@@ -9,7 +9,7 @@ The goal is to make a fully playable, single-player game with a clean UI, proper
 
 ### MVP
 
-- Working deck with shuffling -> [More on shuffling](#Deck-Shuffling)
+- Working deck with shuffling -> [_More on shuffling_](#Deck-Shuffling)
 - Dealing functionality
 - Betting logic (check, call, fold, raise)
 - Community cards + flow (preflop -> flop -> turn -> river)
@@ -43,7 +43,7 @@ The goal is to make a fully playable, single-player game with a clean UI, proper
 Easiest way seems to be like my 6th year project. ENUM for suits and values will likely be int class as we need values 1-14 to determine kicker cards too. - Will need Deck Class to use in array for algorithm.
 SHUFFLING
 Found a cheeky little algorithm called Fisher–Yates shuffle Algorithm - seems easy enough to implement with arrays. Better than getting lava lamps or RNG that does (52!).
-**Link** -> [_here_](https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_sort_random2)
+[_Source_](https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_sort_random2)
 
 ### Object Structure
 
