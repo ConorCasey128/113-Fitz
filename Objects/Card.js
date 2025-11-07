@@ -19,7 +19,7 @@ export default class Card {
 
     return new Card(suit, value);
   }
-  static const suitSymbols = {
+  static suitSymbols = {
       hearts: "♥",
       diamonds: "♦",
       clubs: "♣",
