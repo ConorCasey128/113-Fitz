@@ -2,14 +2,14 @@ import Card from "./Objects/Card.js";
 import { VALUES } from "./Objects/Constants.js";
 
 const values = [...VALUES];
-const demo = document.getElementById("demo");
+const shuffleList = document.getElementById("shuffleList");
 const shuffleBtn = document.getElementById("shuffle-btn");
 
 const newCard = document.getElementById("genCard");
 const generateBtn = document.getElementById("generate-btn");
 
 function render() {
-  demo.textContent = values.join(", ");
+  shuffleList.textContent = values.join(", ");
 }
 
 function shuffle() {
