@@ -1,4 +1,4 @@
-import { SUITS, VALUES } from "./Constants";
+import { SUITS, VALUES } from "./Constants.js";
 
 export default class Card {
   constructor(suit, value) {
@@ -21,6 +21,12 @@ export default class Card {
   }
 
   toString() {
-    return `${this.value} of ${this.suit}`;
+    const suitSymbols = {
+      hearts: "♥",
+      diamonds: "♦",
+      clubs: "♣",
+      spades: "♠",
+    };
+    return `${this.value} of ${this.suit} ${suitSymbols[this.suit]}`;
   }
 }
