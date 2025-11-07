@@ -19,14 +19,14 @@ export default class Card {
 
     return new Card(suit, value);
   }
-
-  toString() {
-    const suitSymbols = {
+  static const suitSymbols = {
       hearts: "♥",
       diamonds: "♦",
       clubs: "♣",
       spades: "♠",
     };
+  
+  toString() {
     return `${this.value} of ${suitSymbols[this.suit]}`;
   }
 }
