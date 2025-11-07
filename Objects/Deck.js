@@ -1,5 +1,5 @@
-import Card from "./Card";
-import { SUITS, VALUES } from "./Constants";
+import Card from "./Card.js";
+import { SUITS, VALUES } from "./Constants.js";
 
 export default class Deck {
   constructor() {
@@ -20,6 +20,12 @@ export default class Deck {
     }
   }
 
+  toString() {
+    return this.cards.map((card) => card.toString()).join(", ");
+  }
+
+  toStringGrouped() {}
+
   #buildOrderedDeck() {
     const deck = [];
 
@@ -28,5 +34,6 @@ export default class Deck {
         deck.push(new Card(suit, value));
       }
     }
+    return deck;
   }
 }
