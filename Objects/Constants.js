@@ -9,8 +9,8 @@ export const VALUES = [
   "8",
   "9",
   "10",
-  "J",
-  "Q",
-  "K",
-  "A",
+  "Jack",
+  "Queen",
+  "King",
+  "Ace",
 ];
