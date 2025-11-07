@@ -7,16 +7,14 @@
   </head>
   <body>
     <h1>Welcome to the Poker Site ♠ ♥ ♦ ♣</h1>
-    <img src="Images/gosling-sad-gosling.gif" height="400" />
-    <h4>- literally seanboy</h4>
-    <audio controls muted loop>
-      <source src="Sounds/Drive.mp3" />
-    </audio>
 
     <p>Click the button to see the shuffle algorithm in action!</p>
-    <button onclick="shuffle()">⇄</button>
+    <button id="shuffle-btn">⇄</button>
     <p id="demo"></p>
 
-    <script src="app.js"></script>
+    <button id="generate-btn">New Card!</button>
+    <p id="genCard"></p>
+
+    <script type="module" src="app.js"></script>
   </body>
 </html>

@@ -1,20 +1,16 @@
-const values = [
-  "Ace",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "Jack",
-  "Queen",
-  "King",
-];
+import Card from "./Objects/Card.js";
+import { VALUES } from "./Objects/Constants.js";
 
-document.getElementById("demo").innerHTML = values.join(", ");
+const values = [...VALUES];
+const demo = document.getElementById("demo");
+const shuffleBtn = document.getElementById("shuffle-btn");
+
+const newCard = document.getElementById("genCard");
+const generateBtn = document.getElementById("generate-btn");
+
+function render() {
+  demo.textContent = values.join(", ");
+}
 
 function shuffle() {
   for (let i = values.length - 1; i > 0; i--) {
@@ -23,5 +19,14 @@ function shuffle() {
     values[i] = values[j];
     values[j] = k;
   }
-  document.getElementById("demo").innerHTML = values.join(", ");
+  render();
 }
+
+function generateRandomCard() {
+  const randomCard = Card.constructRandomCard();
+  newCard.textContent = randomCard.toString();
+}
+
+render();
+shuffleBtn.addEventListener("click", shuffle);
+generateBtn.addEventListener("click", generateRandomCard);
