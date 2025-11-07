@@ -27,6 +27,6 @@ export default class Card {
       clubs: "♣",
       spades: "♠",
     };
-    return `${this.value} of ${this.suit} ${suitSymbols[this.suit]}`;
+    return `${this.value} of ${suitSymbols[this.suit]}`;
   }
 }
