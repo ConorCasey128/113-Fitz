@@ -1,24 +1,31 @@
+:root {
+  --felt_background: radial-gradient(
+    circle at center,
+    #0b5a2e 0%,
+    #06471f 100%
+  );
 
-body{
-    
-    font-family: 'Poppins', sans-serif;
-  
-    background: linear-gradient(50deg, #3a377c, #1c221d);
-    color: #00b8e6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    text-align: center;
-
+  /* We should pull all values in here
+  * for example, instead of doing color #: xxxxx
+  * we can just do var(xxxxxx) and reuse them */
 }
-h1{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color:rgb(42, 178, 199);
-    text-shadow: 0 0 8px rgba(4, 5, 5, 0.287);
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--felt_background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: rgb(42, 178, 199);
+  text-shadow: 0 0 8px rgba(4, 5, 5, 0.287);
 }
 p {
   font-size: 1.1rem;
@@ -41,15 +48,13 @@ button:hover {
   background: #00b8e6;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
-  
 }
-a{
-    color: aliceblue;
-    text-decoration: none;
-    margin-top: 2rem;
-    display: inline-flexbox;
-
+a {
+  color: aliceblue;
+  text-decoration: none;
+  margin-top: 2rem;
+  display: inline-flexbox;
 }
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
