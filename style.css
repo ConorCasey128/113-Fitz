@@ -1,4 +1,11 @@
 :root {
+  /* Color Palette */
+  --falu_red: #721817;
+  --sandy_brown: #fa9f42;
+  --indigo_dye: #2b4162;
+  --dartmouth_green: #0b6e4f;
+  --platinum: #e0e0e2;
+
   --felt_background: radial-gradient(
     circle at center,
     #0b5a2e 0%,
