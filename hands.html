@@ -3,9 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="Images/Poker_Icon.svg"/>
     <title>Document</title>
   </head>
   <body>
+
+    <div class="five-card-row">
+      <div class ="five-card-column">
+        <img src="Images/Deck/poker-super1/AS.svg" alt ="Ace of Spades" style="width:100px; height: 130px;">
+      </div>
+      <div class = "five-card-column">
+        <img src="Images/Deck/poker-super1/KS.svg" alt ="King of Spades" style="width:100px; height: 130px;">
+      </div>
+      <div class = "five-card-column">
+        <img src="Images/Deck/poker-super1/QS.svg" alt ="Queen of Spades" style="width:100px; height: 130px;">
+      </div>
+      <div class = "five-card-column">
+        <img src="Images/Deck/poker-super1/JS.svg" alt ="Jack of Spades" style="width:100px; height: 130px;">
+      </div>
+      <div class = "five-card-column">
+        <img src="Images/Deck/poker-super1/TS.svg" alt ="Ten of Spades" style="width:100px; height: 130px;">
+      </div>
+    </div>
     <table>
       <thead>
         <tr>
@@ -15,7 +35,7 @@
           <th>Example</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody>        
         <tr align="center">
           <td>1</td>
           <td>Royal Flush</td>
@@ -23,6 +43,7 @@
           <td>A♠ K♠ Q♠ J♠ 10♠</td>
         </tr>
         <tr align="center">
+
           <td>2</td>
           <td>Straight Flush</td>
           <td>Five cards in sequence, all of the same suit.</td>
@@ -78,8 +99,12 @@
         </tr>
       </tbody>
     </table>
-
-    <br />
+    <button id= "worse-hand-btn">Next Hand</button>
+    <p>
+      
+    </p>
+    <br/>
     <a href="index.html">Back to home</a>
+    
   </body>
 </html>
