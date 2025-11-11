@@ -4,12 +4,36 @@
     #0b5a2e 0%,
     #06471f 100%
   );
+  .five-card-row {
+    display: flex;
+  };
 
+  .five-card-column {
+  flex: 33.33%;
+  padding: 5px;
+  };
   /* We should pull all values in here
   * for example, instead of doing color #: xxxxx
   * we can just do var(xxxxxx) and reuse them */
 }
 
+
+
+tbody {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0.5rem auto 1.5rem;
+  color: #cfd8dc;
+  
+  
+}
+th {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: rgb(42, 178, 199);
+  text-shadow: 0 0 8px rgba(4, 5, 5, 0.287);
+}
 body {
   font-family: "Poppins", sans-serif;
   background: var(--felt_background);
