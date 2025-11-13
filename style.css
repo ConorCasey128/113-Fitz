@@ -48,9 +48,10 @@ h1 {
   text-shadow: 0 0 8px rgba(4, 5, 5, 0.287);
 }
 p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   max-width: 600px;
   margin: 0.5rem auto 1.5rem;
+  font-weight: bolder;
   color: var(--platinum);
 }
 button {
