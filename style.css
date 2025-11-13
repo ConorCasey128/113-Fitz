@@ -1,11 +1,16 @@
 :root {
-  --felt_background: radial-gradient(
-    circle at center,
-    #0b5a2e 0%,
-    #06471f 100%
-  );
+  /* Color Palette */
+  --falu_red: #721817;
+  --sandy_brown: #fa9f42;
+  --indigo_dye: #2b4162;
+  --dartmouth_green: #0b6e4f;
+  --platinum: #e0e0e2;
 
-  --global_font: "Luckiest Guy", cursive;
+  --felt_background_texture: var(--dartmouth_green);
+
+  --global_font:
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   /* We should pull all values in here
   * for example, instead of doing color #: xxxxx
@@ -22,12 +27,12 @@ tbody {
 th {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: rgb(42, 178, 199);
+  color: var(--sandy_brown);
   text-shadow: 0 0 8px rgba(4, 5, 5, 0.287);
 }
 body {
   font-family: var(--global_font);
-  background: var(--felt_background);
+  background: var(--felt_background_texture);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,23 +40,25 @@ body {
   height: 100vh;
   margin: 0;
   text-align: center;
+  position: relative;
 }
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: rgb(42, 178, 199);
+  color: var(--sandy_brown);
   text-shadow: 0 0 8px rgba(4, 5, 5, 0.287);
 }
 p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   max-width: 600px;
   margin: 0.5rem auto 1.5rem;
-  color: #cfd8dc;
+  font-weight: bolder;
+  color: var(--platinum);
 }
 button {
-  background: #ff0000;
+  background: var(--falu_red);
   border: none;
-  color: #1e1e2f;
+  color: var(--platinum);
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   margin: 0.5rem;
@@ -60,18 +67,26 @@ button {
   transition: all 0.3s ease;
 }
 button:hover {
-  background: #00b8e6;
+  background: var(--sandy_brown);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+  box-shadow: 0 4px 12px var(--sandy_brown);
 }
 a {
-  color: aliceblue;
-  text-decoration: none;
+  color: var(--sandy_brown);
+  text-decoration: underline;
+  font-weight: 600;
   margin-top: 2rem;
-  display: inline-flexbox;
+  display: inline-flex;
 }
 a:hover {
   text-decoration: underline;
+}
+
+.page_link {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .five-card-row {
