@@ -12,7 +12,9 @@
     #06471f 100%
   );
 
-  --global_font: "Luckiest Guy", cursive;
+  --global_font:
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   /* We should pull all values in here
   * for example, instead of doing color #: xxxxx
@@ -29,7 +31,7 @@ tbody {
 th {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: rgb(42, 178, 199);
+  color: var(--sandy_brown);
   text-shadow: 0 0 8px rgba(4, 5, 5, 0.287);
 }
 body {
@@ -46,19 +48,19 @@ body {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: rgb(42, 178, 199);
+  color: var(--sandy_brown);
   text-shadow: 0 0 8px rgba(4, 5, 5, 0.287);
 }
 p {
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0.5rem auto 1.5rem;
-  color: #cfd8dc;
+  color: var(--platinum);
 }
 button {
-  background: #ff0000;
+  background: var(--falu_red);
   border: none;
-  color: #1e1e2f;
+  color: var(--platinum);
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   margin: 0.5rem;
@@ -67,13 +69,15 @@ button {
   transition: all 0.3s ease;
 }
 button:hover {
-  background: #00b8e6;
+  background: var(--sandy_brown);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+  box-shadow: 0 4px 12px var(--sandy_brown);
 }
 a {
-  color: aliceblue;
-  text-decoration: none;
+  color: var(--sandy_brown);
+  text-decoration: underline;
+  font-weight: 600;
+  font-style: italic;
   margin-top: 2rem;
   display: inline-flexbox;
 }
