@@ -1,4 +1,10 @@
-import { SUITS, VALUES } from "./Constants.js";
+import {
+  SUITS,
+  VALUES,
+  VALUE_RANKS,
+  VALUE_CODES,
+  SUIT_CODES,
+} from "./Constants.js";
 
 export default class Card {
   constructor(suit, value) {
@@ -11,6 +17,7 @@ export default class Card {
 
     this.suit = suit;
     this.value = value;
+    this.rank = VALUE_RANKS[value];
   }
 
   static constructRandomCard() {
@@ -29,5 +36,9 @@ export default class Card {
     };
 
     return `${this.value} of ${suitSymbols[this.suit]}`;
+  }
+
+  getCode() {
+    return VALUE_CODES[this.value] + SUIT_CODES[this.suit];
   }
 }
