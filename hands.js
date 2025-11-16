@@ -156,11 +156,6 @@ function showHand(index) {
   currentHand.cards.forEach((card) => {
     renderCardImage(card, handContainer);
   });
-  handContainer.innerHTML = " ";
-
-  currentHand.cards.forEach((card) => {
-    renderCardImage(card, handContainer);
-  });
 }
 
 document.getElementById("nextBtn").addEventListener("click", () => {

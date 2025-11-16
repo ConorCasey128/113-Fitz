@@ -106,3 +106,35 @@ a:hover {
   color: var(--platinum);
   font-style: italic;
 }
+
+.hand-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-arrow {
+  width: 0.1px;
+  height: 0.1px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--falu_red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    box-shadow 0.15s ease;
+}
