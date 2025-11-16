@@ -34,7 +34,7 @@ function getCardImagePath(card) {
   return `Images/Deck/poker-super1/${code}.svg`;
 }
 
-function renderCardImage(card) {
+export function renderCardImage(card) {
   cardContainer.innerHTML = "";
 
   const img = document.createElement("img");
