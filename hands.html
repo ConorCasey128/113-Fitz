@@ -10,51 +10,18 @@
   <body>
     <img src="Images/Poker_Icon.svg" height="100" />
 
-    <h1>#1 - The Royal Flush</h1>
+    <h1 id = "handTitleName"> </h1>
 
-    <div class="five-card-row">
-      <div class="five-card-column">
-        <img
-          src="Images/Deck/poker-super1/AS.svg"
-          alt="Ace of Spades"
-          style="width: 100px; height: 130px"
-        />
-      </div>
-      <div class="five-card-column">
-        <img
-          src="Images/Deck/poker-super1/KS.svg"
-          alt="King of Spades"
-          style="width: 100px; height: 130px"
-        />
-      </div>
-      <div class="five-card-column">
-        <img
-          src="Images/Deck/poker-super1/QS.svg"
-          alt="Queen of Spades"
-          style="width: 100px; height: 130px"
-        />
-      </div>
-      <div class="five-card-column">
-        <img
-          src="Images/Deck/poker-super1/JS.svg"
-          alt="Jack of Spades"
-          style="width: 100px; height: 130px"
-        />
-      </div>
-      <div class="five-card-column">
-        <img
-          src="Images/Deck/poker-super1/TS.svg"
-          alt="Ten of Spades"
-          style="width: 100px; height: 130px"
-        />
-      </div>
+   
+    <div id="cardContainer" style="display: flex; gap: 12px;"></div>
+
+    <div style="margin-top: 30px;">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
     </div>
 
-    <p>
-      Ace, King, Queen, Jack and 10, all of the same suit. <br />
-      <i>It doesn't get better than this.</i>
-    </p>
 
     <a href="index.html" class="page_link">Back to home</a>
+    <script type="module" src="hands.js"></script>
   </body>
 </html>

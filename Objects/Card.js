@@ -41,4 +41,6 @@ export default class Card {
   getCode() {
     return VALUE_CODES[this.value] + SUIT_CODES[this.suit];
   }
+
+  
 }
