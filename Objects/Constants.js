@@ -48,7 +48,7 @@ export const VALUE_CODES = {
   7: 7,
   8: 8,
   9: 9,
-  10: T,
+  10: "T",
   Jack: "J",
   Queen: "Q",
   King: "K",
