@@ -6,12 +6,6 @@ const values = [...VALUES];
 const shuffleList = document.getElementById("shuffleList");
 const shuffleBtn = document.getElementById("shuffle-btn");
 
-const newCard = document.getElementById("genCard");
-const generateBtn = document.getElementById("generate-btn");
-
-const newDeck = document.getElementById("genDeck");
-const newDeckBtn = document.getElementById("deck-btn");
-
 function render() {
   shuffleList.textContent = values.join(", ");
 }
@@ -26,17 +20,5 @@ function shuffle() {
   render();
 }
 
-function generateRandomCard() {
-  const randomCard = Card.constructRandomCard();
-  newCard.textContent = randomCard.toString();
-}
-
-function loadDeck() {
-  const deck = new Deck();
-  newDeck.textContent = deck.toString();
-}
-
 render();
 shuffleBtn.addEventListener("click", shuffle);
-generateBtn.addEventListener("click", generateRandomCard);
-newDeckBtn.addEventListener("click", loadDeck);
