@@ -121,11 +121,9 @@ a:hover {
 }
 
 .nav-arrow {
-  width: 0.1px;
-  height: 0.1px;
   padding: 0;
   border-radius: 50%;
-  background: var(--falu_red);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,4 +135,10 @@ a:hover {
     transform 0.15s ease,
     background 0.15s ease,
     box-shadow 0.15s ease;
+}
+
+.nav-arrow:hover {
+  background: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px transparent;
 }
