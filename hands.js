@@ -23,7 +23,7 @@ export const exampleHands = [
       { value: "5", suit: "hearts" },
     ],
     description: "Five cards in a row, all the same suit.",
-    phrase: "A straight but just better.",
+    phrase: "",
   },
   {
     name: "Four of a Kind",
@@ -35,7 +35,7 @@ export const exampleHands = [
       { value: "9", suit: "spades" },
     ],
     description: "Four cards of the same value.",
-    phrase: "If you have this, bet big.",
+    phrase: "",
   },
   {
     name: "Full House",
@@ -47,7 +47,7 @@ export const exampleHands = [
       { value: "7", suit: "hearts" },
     ],
     description: "Three of one value and a pair of another.",
-    phrase: "Strong, and very hard to beat.",
+    phrase: "",
   },
   {
     name: "Flush",
@@ -59,7 +59,7 @@ export const exampleHands = [
       { value: "3", suit: "diamonds" },
     ],
     description: "Five cards all in the same suit.",
-    phrase: "They don’t need to be in order - just matching suits.",
+    phrase: "",
   },
   {
     name: "Straight",
@@ -71,7 +71,7 @@ export const exampleHands = [
       { value: "4", suit: "clubs" },
     ],
     description: "Five cards in numerical order, any suits.",
-    phrase: "Clean, simple, surprisingly strong.",
+    phrase: "",
   },
   {
     name: "Three of a Kind",
@@ -83,7 +83,7 @@ export const exampleHands = [
       { value: "8", suit: "diamonds" },
     ],
     description: "Three cards of the same value.",
-    phrase: "Reliable mid-tier strength.",
+    phrase: "",
   },
   {
     name: "Two Pair",
@@ -94,8 +94,8 @@ export const exampleHands = [
       { value: "4", suit: "clubs" },
       { value: "9", suit: "hearts" },
     ],
-    description: "Two different pairs and one extra card.",
-    phrase: "One of the most common winning hands.",
+    description: "Two separate pairs",
+    phrase: "",
   },
   {
     name: "One Pair",
@@ -107,7 +107,7 @@ export const exampleHands = [
       { value: "2", suit: "hearts" },
     ],
     description: "Two cards of the same value.",
-    phrase: "Basic, but enough to win small pots.",
+    phrase: "",
   },
   {
     name: "High Card",
@@ -119,7 +119,7 @@ export const exampleHands = [
       { value: "3", suit: "clubs" },
     ],
     description: "No pairs, no straight, no flush - just your highest card.",
-    phrase: "The absolute baseline.",
+    phrase: "",
   },
 ];
 
