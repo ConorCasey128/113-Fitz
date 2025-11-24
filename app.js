@@ -1,20 +1,16 @@
-import { VALUES } from "./Objects/Constants.js";
+import Deck from "./Objects/Deck.js";
 
-const values = [...VALUES];
 const shuffleList = document.getElementById("shuffleList");
 const shuffleBtn = document.getElementById("shuffle-btn");
 
+const displayDeck = new Deck();
+
 function render() {
-  shuffleList.textContent = values.join(", ");
+  shuffleList.textContent = displayDeck.toString();
 }
 
 function shuffle() {
-  for (let i = values.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    let k = values[i];
-    values[i] = values[j];
-    values[j] = k;
-  }
+  displayDeck.shuffle();
   render();
 }
 
